@@ -48,11 +48,23 @@ class ImageGenerator:
         
         # 常见的中文字体路径
         font_paths = [
+            # Windows字体
             'C:/Windows/Fonts/msyh.ttc',  # 微软雅黑
             'C:/Windows/Fonts/simsun.ttc',  # 宋体
             'C:/Windows/Fonts/simhei.ttf',  # 黑体
-            '/System/Library/Fonts/PingFang.ttc',  # macOS
-            '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',  # Linux
+            # macOS字体
+            '/System/Library/Fonts/PingFang.ttc',
+            '/System/Library/Fonts/Hiragino Sans GB.ttc',
+            # Linux中文字体
+            '/usr/share/fonts/truetype/wqy/wqy-microhei.ttc',  # 文泉驿微米黑
+            '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',    # 文泉驿正黑
+            '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',  # Noto CJK
+            '/usr/share/fonts/truetype/arphic/uming.ttc',      # AR PL UMing
+            # 项目内字体文件
+            './fonts/NotoSansCJK-Regular.ttc',
+            './fonts/wqy-microhei.ttc',
+            # 通用fallback
+            '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
         ]
         
         # 尝试加载字体
