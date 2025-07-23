@@ -59,6 +59,9 @@ class ImageGenerator:
             '/usr/share/fonts/truetype/wqy/wqy-microhei.ttc',  # 文泉驿微米黑
             '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',    # 文泉驿正黑
             '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',  # Noto CJK
+            '/usr/share/fonts/google-noto-cjk/NotoSansCJK-Regular.ttc',  # Google Noto CJK
+            '/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc',  # Noto CJK alternative
+            '/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc',  # Noto CJK alternative 2
             '/usr/share/fonts/truetype/arphic/uming.ttc',      # AR PL UMing
             # 项目内字体文件
             './fonts/NotoSansCJK-Regular.ttc',
