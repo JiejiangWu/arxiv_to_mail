@@ -57,9 +57,8 @@ class ArxivSearcher:
         start_date, end_date = get_date_range_for_arxiv(days_back)
         time_query = f"submittedDate:[{start_date}* TO {end_date}*]"
 
-        # 组合查询
-        # query = f"({keyword_query}) AND ({categories_part}) AND {time_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
-        query = f"({keyword_query}) AND {time_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
+        # 组合查询 (不包含max_results，这个会单独作为参数)
+        query = f"({keyword_query}) AND {time_query}"
 
         return query
     
@@ -87,6 +86,9 @@ class ArxivSearcher:
                 # 按照提交日期排序，获取最新的论文
                 params = {
                     'search_query': query,
+                    'sortBy': 'lastUpdatedDate',
+                    'sortOrder': 'descending',
+                    'max_results': max_results
                 }
                 
                 logger.info(f"Searching ArXiv with keyword '{keyword}', query: {query}")
@@ -106,7 +108,6 @@ class ArxivSearcher:
                         # 检查是否已经存在（去重）
                         if paper_info['arxiv_id'] in seen_arxiv_ids:
                             continue
-                            
                         # 检查日期过滤
                         if paper_info['published_date'] >= cutoff_date:
                             keyword_papers.append(paper_info)
@@ -127,7 +128,9 @@ class ArxivSearcher:
         all_papers.sort(key=lambda x: x['published_date'], reverse=True)
         
         logger.info(f"Total found {len(all_papers)} unique papers after merging all keywords")
-        return all_papers[:max_results]
+        final_res_num = max(len(all_papers),max_results*len(keywords))
+        
+        return all_papers[:final_res_num]
     
     def extract_paper_info(self, entry):
         """

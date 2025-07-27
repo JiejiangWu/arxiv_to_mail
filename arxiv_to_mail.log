@@ -1418,3 +1418,238 @@
 2025-07-28 00:59:31,282 - ERROR - Error sending image email for paper 2507.18572: (-1, b'\x00\x00\x00')
 2025-07-28 00:59:31,284 - INFO - Successfully processed and sent paper 5
 2025-07-28 00:59:31,284 - INFO - Task completed successfully
+2025-07-28 01:10:22,800 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:10:22,801 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:10:22,802 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:24,461 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 01:10:24,461 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:25,798 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 01:10:25,798 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:27,209 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 01:10:27,209 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:28,450 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:10:28,451 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:29,801 - INFO - Found 0 papers for keyword 'flux'
+2025-07-28 01:10:29,802 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:31,044 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:10:31,045 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:32,401 - INFO - Found 0 papers for keyword 'video generation'
+2025-07-28 01:10:32,401 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:33,786 - INFO - Found 0 papers for keyword 'image generaion'
+2025-07-28 01:10:33,787 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing)&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:35,526 - INFO - Found 0 papers for keyword 'image editing'
+2025-07-28 01:10:35,526 - INFO - Total found 0 unique papers after merging all keywords
+2025-07-28 01:10:35,527 - INFO - Found 0 papers
+2025-07-28 01:10:35,527 - INFO - No papers found for today
+2025-07-28 01:10:53,122 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:10:53,124 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:10:53,124 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:54,432 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 01:10:54,433 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:55,847 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 01:10:55,849 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:57,269 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 01:10:57,269 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:58,719 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:10:58,719 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:10:59,862 - INFO - Found 0 papers for keyword 'flux'
+2025-07-28 01:10:59,862 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:01,066 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:11:01,066 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:02,560 - INFO - Found 0 papers for keyword 'video generation'
+2025-07-28 01:11:02,560 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:03,950 - INFO - Found 0 papers for keyword 'image generaion'
+2025-07-28 01:11:03,951 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:05,221 - INFO - Found 0 papers for keyword 'image editing'
+2025-07-28 01:11:05,221 - INFO - Total found 0 unique papers after merging all keywords
+2025-07-28 01:11:05,221 - INFO - Found 0 papers
+2025-07-28 01:11:05,222 - INFO - No papers found for today
+2025-07-28 01:11:18,245 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:11:18,247 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:11:18,247 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250725* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:19,467 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 01:11:19,467 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250725* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:20,407 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 01:11:20,407 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250725* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:21,614 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 01:11:21,614 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250725* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:27,442 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:11:27,443 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:11:27,444 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:28,674 - INFO - Found 10 papers for keyword 'wan 2.1'
+2025-07-28 01:11:28,674 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:29,949 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:11:29,949 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:31,341 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:11:31,341 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:32,552 - INFO - Found 1 papers for keyword 'vggt'
+2025-07-28 01:11:32,552 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:58,116 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:11:58,117 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:11:58,117 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:11:59,186 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 01:11:59,186 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:00,220 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 01:12:00,221 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:01,172 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 01:12:01,173 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:02,357 - INFO - Found 1 papers for keyword 'vggt'
+2025-07-28 01:12:02,357 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:08,728 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:12:08,729 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:12:08,729 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:09,785 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 01:12:09,785 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:11,176 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 01:12:11,176 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:12,219 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 01:12:12,219 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:13,287 - INFO - Found 1 papers for keyword 'vggt'
+2025-07-28 01:12:13,287 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:14,161 - INFO - Found 0 papers for keyword 'flux'
+2025-07-28 01:12:14,162 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:12:47,822 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:12:47,823 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:12:47,823 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=UpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:14:08,599 - WARNING - Error extracting paper info: 
+2025-07-28 01:14:11,236 - WARNING - Error extracting paper info: 
+2025-07-28 01:14:13,579 - WARNING - Error extracting paper info: 
+2025-07-28 01:14:15,720 - WARNING - Error extracting paper info: 
+2025-07-28 01:14:20,101 - WARNING - Error extracting paper info: 
+2025-07-28 01:15:32,963 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:15:32,965 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:15:32,965 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:18:04,273 - WARNING - Error extracting paper info: 
+2025-07-28 01:18:25,961 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:18:25,963 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:18:25,963 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1)&sortBy=submittedDate&sortOrder=descending&max_results=10
+2025-07-28 01:26:11,040 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:26:11,042 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:26:11,042 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:29:35,676 - WARNING - Error extracting paper info: 
+2025-07-28 01:30:08,662 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:30:08,663 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:30:08,664 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:09,670 - INFO - Found 10 papers for keyword 'wan 2.1'
+2025-07-28 01:30:09,670 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:10,743 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:30:10,743 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:11,937 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:30:11,938 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:12,934 - INFO - Found 1 papers for keyword 'vggt'
+2025-07-28 01:30:12,934 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:14,304 - INFO - Found 10 papers for keyword 'flux'
+2025-07-28 01:30:14,304 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:15,548 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:30:15,548 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:16,745 - INFO - Found 10 papers for keyword 'video generation'
+2025-07-28 01:30:16,745 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:18,020 - INFO - Found 9 papers for keyword 'image generaion'
+2025-07-28 01:30:18,020 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250721* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10
+2025-07-28 01:30:19,461 - INFO - Found 8 papers for keyword 'image editing'
+2025-07-28 01:30:19,462 - INFO - Total found 68 unique papers after merging all keywords
+2025-07-28 01:30:19,462 - INFO - Found 68 papers
+2025-07-28 01:30:19,463 - INFO - Processing paper 1/68: Captain Cinema: Towards Short Movie Generation...
+2025-07-28 01:30:19,463 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18634.pdf
+2025-07-28 01:30:30,423 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:30:30,424 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:30:30,424 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:31,710 - INFO - Found 6 papers for keyword 'wan 2.1'
+2025-07-28 01:30:31,710 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:33,078 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:30:33,078 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:34,360 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:30:34,361 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:35,671 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:30:35,672 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:37,122 - INFO - Found 9 papers for keyword 'flux'
+2025-07-28 01:30:37,122 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:38,301 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:30:38,302 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:39,494 - INFO - Found 8 papers for keyword 'video generation'
+2025-07-28 01:30:39,494 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:40,767 - INFO - Found 9 papers for keyword 'image generaion'
+2025-07-28 01:30:40,768 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:30:42,326 - INFO - Found 6 papers for keyword 'image editing'
+2025-07-28 01:30:42,326 - INFO - Total found 58 unique papers after merging all keywords
+2025-07-28 01:30:42,327 - INFO - Found 58 papers
+2025-07-28 01:30:42,327 - INFO - Processing paper 1/58: Captain Cinema: Towards Short Movie Generation...
+2025-07-28 01:30:42,327 - INFO - PDF already exists: ./downloads\2507.18634.pdf
+2025-07-28 01:30:42,327 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18634.png
+2025-07-28 01:30:42,331 - INFO - Cleaned up PDF file: ./downloads\2507.18634.pdf
+2025-07-28 01:30:42,331 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 01:31:33,739 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:31:33,740 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:31:33,740 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:31:34,851 - INFO - Found 6 papers for keyword 'wan 2.1'
+2025-07-28 01:31:34,851 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:31:35,890 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:31:35,890 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:31:37,041 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:31:37,041 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:22,415 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:32:22,417 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:32:42,580 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:44,008 - INFO - Found 6 papers for keyword 'wan 2.1'
+2025-07-28 01:32:44,008 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:44,898 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:32:44,899 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:45,865 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:32:45,865 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:46,967 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:32:46,967 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:48,021 - INFO - Found 9 papers for keyword 'flux'
+2025-07-28 01:32:48,021 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:49,260 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:32:49,260 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:50,097 - INFO - Found 8 papers for keyword 'video generation'
+2025-07-28 01:32:50,097 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:51,161 - INFO - Found 9 papers for keyword 'image generaion'
+2025-07-28 01:32:51,161 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:32:52,274 - INFO - Found 6 papers for keyword 'image editing'
+2025-07-28 01:32:52,274 - INFO - Total found 58 unique papers after merging all keywords
+2025-07-28 01:32:52,275 - INFO - Found 58 papers
+2025-07-28 01:32:52,275 - INFO - Processing paper 1/58: Captain Cinema: Towards Short Movie Generation...
+2025-07-28 01:32:52,275 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18634.pdf
+2025-07-28 01:33:32,564 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:33:32,565 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:33:47,127 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:33:47,968 - INFO - Found 6 papers for keyword 'wan 2.1'
+2025-07-28 01:33:47,968 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:33:48,941 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 01:33:48,941 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:33:49,887 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 01:33:49,888 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:33:50,904 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:33:50,904 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:33:51,843 - INFO - Found 9 papers for keyword 'flux'
+2025-07-28 01:33:51,844 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=3
+2025-07-28 01:35:37,094 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 01:35:37,096 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 01:35:39,597 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:40,921 - INFO - Found 3 papers for keyword 'wan 2.1'
+2025-07-28 01:35:40,921 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:42,232 - INFO - Found 3 papers for keyword 'stable diffusion'
+2025-07-28 01:35:42,232 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:43,620 - INFO - Found 3 papers for keyword '3D gaussian'
+2025-07-28 01:35:43,620 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:45,030 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 01:35:45,030 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:46,330 - INFO - Found 3 papers for keyword 'flux'
+2025-07-28 01:35:46,330 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:47,818 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 01:35:47,818 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:49,540 - INFO - Found 2 papers for keyword 'video generation'
+2025-07-28 01:35:49,540 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:51,135 - INFO - Found 1 papers for keyword 'image generaion'
+2025-07-28 01:35:51,135 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250723* TO 20250728*]
+2025-07-28 01:35:52,403 - INFO - Found 0 papers for keyword 'image editing'
+2025-07-28 01:35:52,403 - INFO - Total found 15 unique papers after merging all keywords
+2025-07-28 01:35:52,404 - INFO - Found 15 papers
+2025-07-28 01:35:52,404 - INFO - Processing paper 1/15: Captain Cinema: Towards Short Movie Generation...
+2025-07-28 01:35:52,405 - INFO - PDF already exists: ./downloads\2507.18634.pdf
+2025-07-28 01:35:52,405 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18634.png
+2025-07-28 01:35:52,406 - INFO - Cleaned up PDF file: ./downloads\2507.18634.pdf
+2025-07-28 01:35:52,406 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 01:35:54,350 - INFO - Abstract analysis completed successfully
+2025-07-28 01:35:54,350 - INFO - Generating summary image for paper: 2507.18634
