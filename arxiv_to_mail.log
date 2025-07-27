@@ -867,3 +867,554 @@
 2025-07-23 11:04:00,273 - ERROR - Error sending image email for paper 2507.15846: (-1, b'\x00\x00\x00')
 2025-07-23 11:04:00,275 - INFO - Successfully processed and sent paper 5
 2025-07-23 11:04:00,276 - INFO - Task completed successfully
+2025-07-24 02:11:08,092 - INFO - Starting ArXiv paper search and email task...
+2025-07-24 02:11:08,095 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-24 02:11:08,095 - INFO - Searching ArXiv with query: (all:language model OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:video model OR all:image edit) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250722* TO 20250724*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-24 02:11:09,390 - INFO - Found 5 papers matching criteria
+2025-07-24 02:11:09,391 - INFO - Found 5 papers
+2025-07-24 02:11:09,391 - INFO - Processing paper 1/5: ThinkAct: Vision-Language-Action Reasoning via Rei...
+2025-07-24 02:11:09,391 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16815.pdf
+2025-07-24 02:11:12,346 - INFO - PDF downloaded successfully: ./downloads\2507.16815.pdf
+2025-07-24 02:11:12,347 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16815.png
+2025-07-24 02:11:12,348 - INFO - Cleaned up PDF file: ./downloads\2507.16815.pdf
+2025-07-24 02:11:12,348 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:11:15,778 - INFO - Abstract analysis completed successfully
+2025-07-24 02:11:15,779 - INFO - Generating summary image for paper: 2507.16815
+2025-07-24 02:11:16,076 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16815_summary.png
+2025-07-24 02:11:16,086 - INFO - Sending image email for paper: 2507.16815
+2025-07-24 02:11:16,298 - ERROR - Error sending image email for paper 2507.16815: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1017)
+2025-07-24 02:11:16,299 - INFO - Successfully processed and sent paper 1
+2025-07-24 02:11:16,299 - INFO - Processing paper 2/5: Frontier AI Risk Management Framework in Practice:...
+2025-07-24 02:11:16,299 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16534.pdf
+2025-07-24 02:11:18,197 - INFO - PDF downloaded successfully: ./downloads\2507.16534.pdf
+2025-07-24 02:11:18,197 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16534.png
+2025-07-24 02:11:18,198 - INFO - Cleaned up PDF file: ./downloads\2507.16534.pdf
+2025-07-24 02:11:18,198 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:11:20,014 - INFO - Abstract analysis completed successfully
+2025-07-24 02:11:20,014 - INFO - Generating summary image for paper: 2507.16534
+2025-07-24 02:11:20,244 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16534_summary.png
+2025-07-24 02:11:20,251 - INFO - Sending image email for paper: 2507.16534
+2025-07-24 02:11:20,465 - ERROR - Error sending image email for paper 2507.16534: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1017)
+2025-07-24 02:11:20,466 - INFO - Successfully processed and sent paper 2
+2025-07-24 02:11:20,467 - INFO - Processing paper 3/5: Experience is the Best Teacher: Grounding VLMs for...
+2025-07-24 02:11:20,468 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16713.pdf
+2025-07-24 02:11:23,162 - INFO - PDF downloaded successfully: ./downloads\2507.16713.pdf
+2025-07-24 02:11:23,163 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.16713.pdf
+2025-07-24 02:11:23,509 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-24 02:11:23,621 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.16713.png
+2025-07-24 02:11:23,621 - INFO - Final image size: 1545x2000, file size: 1.20MB
+2025-07-24 02:11:23,624 - INFO - Cleaned up PDF file: ./downloads\2507.16713.pdf
+2025-07-24 02:11:23,625 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:11:26,246 - INFO - Abstract analysis completed successfully
+2025-07-24 02:11:26,246 - INFO - Generating summary image for paper: 2507.16713
+2025-07-24 02:11:26,598 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16713_summary.png
+2025-07-24 02:11:26,610 - INFO - Sending image email for paper: 2507.16713
+2025-07-24 02:11:26,823 - ERROR - Error sending image email for paper 2507.16713: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1017)
+2025-07-24 02:11:26,823 - INFO - Successfully processed and sent paper 3
+2025-07-24 02:11:26,824 - INFO - Processing paper 4/5: Zebra-CoT: A Dataset for Interleaved Vision Langua...
+2025-07-24 02:11:26,824 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16746.pdf
+2025-07-24 02:11:31,177 - INFO - PDF downloaded successfully: ./downloads\2507.16746.pdf
+2025-07-24 02:11:31,178 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.16746.pdf
+2025-07-24 02:11:31,488 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-24 02:11:31,615 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.16746.png
+2025-07-24 02:11:31,615 - INFO - Final image size: 1545x2000, file size: 1.44MB
+2025-07-24 02:11:31,621 - INFO - Cleaned up PDF file: ./downloads\2507.16746.pdf
+2025-07-24 02:11:31,621 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:11:33,441 - INFO - Abstract analysis completed successfully
+2025-07-24 02:11:33,441 - INFO - Generating summary image for paper: 2507.16746
+2025-07-24 02:13:22,936 - INFO - Starting ArXiv paper search and email task...
+2025-07-24 02:13:22,939 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-24 02:13:22,939 - INFO - Searching ArXiv with query: (all:language model OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:video model OR all:image edit) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250722* TO 20250724*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-24 02:13:24,037 - INFO - Found 5 papers matching criteria
+2025-07-24 02:13:24,038 - INFO - Found 5 papers
+2025-07-24 02:13:24,038 - INFO - Processing paper 1/5: ThinkAct: Vision-Language-Action Reasoning via Rei...
+2025-07-24 02:13:24,038 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16815.pdf
+2025-07-24 02:13:52,903 - INFO - Starting ArXiv paper search and email task...
+2025-07-24 02:13:52,905 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-24 02:13:52,905 - INFO - Searching ArXiv with query: (all:language model OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:video model OR all:image edit) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250722* TO 20250724*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-24 02:13:53,774 - INFO - Found 5 papers matching criteria
+2025-07-24 02:13:53,775 - INFO - Found 5 papers
+2025-07-24 02:13:53,775 - INFO - Processing paper 1/5: ThinkAct: Vision-Language-Action Reasoning via Rei...
+2025-07-24 02:13:53,775 - INFO - PDF already exists: ./downloads\2507.16815.pdf
+2025-07-24 02:13:53,775 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16815.png
+2025-07-24 02:13:53,777 - INFO - Cleaned up PDF file: ./downloads\2507.16815.pdf
+2025-07-24 02:13:53,778 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:13:56,633 - INFO - Abstract analysis completed successfully
+2025-07-24 02:13:56,633 - INFO - Generating summary image for paper: 2507.16815
+2025-07-24 02:13:56,919 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16815_summary.png
+2025-07-24 02:13:56,930 - INFO - Sending image email for paper: 2507.16815
+2025-07-24 02:14:00,436 - ERROR - Error sending image email for paper 2507.16815: (-1, b'\x00\x00\x00')
+2025-07-24 02:14:00,438 - INFO - Successfully processed and sent paper 1
+2025-07-24 02:14:00,439 - INFO - Processing paper 2/5: Frontier AI Risk Management Framework in Practice:...
+2025-07-24 02:14:00,440 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16534.pdf
+2025-07-24 02:14:08,458 - INFO - PDF downloaded successfully: ./downloads\2507.16534.pdf
+2025-07-24 02:14:08,459 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16534.png
+2025-07-24 02:14:08,459 - INFO - Cleaned up PDF file: ./downloads\2507.16534.pdf
+2025-07-24 02:14:08,459 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:14:10,598 - INFO - Abstract analysis completed successfully
+2025-07-24 02:14:10,598 - INFO - Generating summary image for paper: 2507.16534
+2025-07-24 02:14:10,845 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16534_summary.png
+2025-07-24 02:14:10,853 - INFO - Sending image email for paper: 2507.16534
+2025-07-24 02:14:14,014 - ERROR - Error sending image email for paper 2507.16534: (-1, b'\x00\x00\x00')
+2025-07-24 02:14:14,014 - INFO - Successfully processed and sent paper 2
+2025-07-24 02:14:14,014 - INFO - Processing paper 3/5: Experience is the Best Teacher: Grounding VLMs for...
+2025-07-24 02:14:14,015 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16713.pdf
+2025-07-24 02:14:16,708 - INFO - PDF downloaded successfully: ./downloads\2507.16713.pdf
+2025-07-24 02:14:16,709 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16713.png
+2025-07-24 02:14:16,710 - INFO - Cleaned up PDF file: ./downloads\2507.16713.pdf
+2025-07-24 02:14:16,710 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:14:18,713 - INFO - Abstract analysis completed successfully
+2025-07-24 02:14:18,713 - INFO - Generating summary image for paper: 2507.16713
+2025-07-24 02:14:19,048 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16713_summary.png
+2025-07-24 02:14:19,061 - INFO - Sending image email for paper: 2507.16713
+2025-07-24 02:14:22,362 - ERROR - Error sending image email for paper 2507.16713: (-1, b'\x00\x00\x00')
+2025-07-24 02:14:22,363 - INFO - Successfully processed and sent paper 3
+2025-07-24 02:14:22,363 - INFO - Processing paper 4/5: Zebra-CoT: A Dataset for Interleaved Vision Langua...
+2025-07-24 02:14:22,363 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16746.pdf
+2025-07-24 02:14:26,510 - INFO - PDF downloaded successfully: ./downloads\2507.16746.pdf
+2025-07-24 02:14:26,511 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16746.png
+2025-07-24 02:14:26,514 - INFO - Cleaned up PDF file: ./downloads\2507.16746.pdf
+2025-07-24 02:14:26,514 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:14:28,659 - INFO - Abstract analysis completed successfully
+2025-07-24 02:14:28,659 - INFO - Generating summary image for paper: 2507.16746
+2025-07-24 02:14:29,001 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16746_summary.png
+2025-07-24 02:14:29,016 - INFO - Sending image email for paper: 2507.16746
+2025-07-24 02:14:32,276 - ERROR - Error sending image email for paper 2507.16746: (-1, b'\x00\x00\x00')
+2025-07-24 02:14:32,277 - INFO - Successfully processed and sent paper 4
+2025-07-24 02:14:32,277 - INFO - Processing paper 5/5: Towards Resilient Safety-driven Unlearning for Dif...
+2025-07-24 02:14:32,277 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16302.pdf
+2025-07-24 02:14:33,964 - INFO - PDF downloaded successfully: ./downloads\2507.16302.pdf
+2025-07-24 02:14:33,965 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.16302.pdf
+2025-07-24 02:14:34,250 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-24 02:14:34,363 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.16302.png
+2025-07-24 02:14:34,364 - INFO - Final image size: 1545x2000, file size: 0.66MB
+2025-07-24 02:14:34,366 - INFO - Cleaned up PDF file: ./downloads\2507.16302.pdf
+2025-07-24 02:14:34,366 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:14:36,434 - INFO - Abstract analysis completed successfully
+2025-07-24 02:14:36,434 - INFO - Generating summary image for paper: 2507.16302
+2025-07-24 02:14:36,735 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16302_summary.png
+2025-07-24 02:14:36,745 - INFO - Sending image email for paper: 2507.16302
+2025-07-24 02:14:39,927 - ERROR - Error sending image email for paper 2507.16302: (-1, b'\x00\x00\x00')
+2025-07-24 02:14:39,928 - INFO - Successfully processed and sent paper 5
+2025-07-24 02:14:39,928 - INFO - Task completed successfully
+2025-07-24 02:16:57,785 - INFO - Starting ArXiv paper search and email task...
+2025-07-24 02:16:57,787 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-24 02:16:57,787 - INFO - Searching ArXiv with query: (all:language model OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:video model OR all:image edit) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250722* TO 20250724*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-24 02:16:58,830 - INFO - Found 5 papers matching criteria
+2025-07-24 02:16:58,831 - INFO - Found 5 papers
+2025-07-24 02:16:58,831 - INFO - Processing paper 1/5: ThinkAct: Vision-Language-Action Reasoning via Rei...
+2025-07-24 02:16:58,831 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16815.pdf
+2025-07-24 02:17:01,414 - INFO - PDF downloaded successfully: ./downloads\2507.16815.pdf
+2025-07-24 02:17:01,414 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16815.png
+2025-07-24 02:17:01,417 - INFO - Cleaned up PDF file: ./downloads\2507.16815.pdf
+2025-07-24 02:17:01,417 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:17:04,264 - INFO - Abstract analysis completed successfully
+2025-07-24 02:17:04,264 - INFO - Generating summary image for paper: 2507.16815
+2025-07-24 02:17:04,543 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16815_summary.png
+2025-07-24 02:17:04,554 - INFO - Sending image email for paper: 2507.16815
+2025-07-24 02:17:07,712 - ERROR - Error sending image email for paper 2507.16815: (-1, b'\x00\x00\x00')
+2025-07-24 02:17:07,714 - INFO - Successfully processed and sent paper 1
+2025-07-24 02:17:07,715 - INFO - Processing paper 2/5: Frontier AI Risk Management Framework in Practice:...
+2025-07-24 02:17:07,715 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16534.pdf
+2025-07-24 02:17:09,504 - INFO - PDF downloaded successfully: ./downloads\2507.16534.pdf
+2025-07-24 02:17:09,504 - INFO - Screenshot already exists: ./downloads\screenshots\2507.16534.png
+2025-07-24 02:17:09,505 - INFO - Cleaned up PDF file: ./downloads\2507.16534.pdf
+2025-07-24 02:17:09,505 - INFO - Analyzing abstract with Gemini API...
+2025-07-24 02:17:11,467 - INFO - Abstract analysis completed successfully
+2025-07-24 02:17:11,468 - INFO - Generating summary image for paper: 2507.16534
+2025-07-24 02:17:11,702 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.16534_summary.png
+2025-07-24 02:17:11,709 - INFO - Sending image email for paper: 2507.16534
+2025-07-24 02:17:14,701 - ERROR - Error sending image email for paper 2507.16534: (-1, b'\x00\x00\x00')
+2025-07-24 02:17:14,702 - INFO - Successfully processed and sent paper 2
+2025-07-24 02:17:14,702 - INFO - Processing paper 3/5: Experience is the Best Teacher: Grounding VLMs for...
+2025-07-24 02:17:14,703 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.16713.pdf
+2025-07-25 12:06:39,420 - INFO - Starting ArXiv paper search and email task...
+2025-07-25 12:06:39,422 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-25 12:06:39,422 - INFO - Searching ArXiv with query: (all:llm OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:image editing) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250723* TO 20250725*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=20
+2025-07-25 12:06:42,500 - INFO - Found 9 papers matching criteria
+2025-07-25 12:06:42,500 - INFO - Found 9 papers
+2025-07-25 12:06:42,501 - INFO - Processing paper 1/9: On the Performance of Concept Probing: The Influen...
+2025-07-25 12:06:42,501 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18550.pdf
+2025-07-25 12:07:45,002 - INFO - Starting ArXiv paper search and email task...
+2025-07-25 12:07:45,004 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-25 12:07:45,004 - INFO - Searching ArXiv with query: (all:llm OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:image editing) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250723* TO 20250725*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=20
+2025-07-25 12:07:50,017 - ERROR - Error searching ArXiv: 502 Server Error: Bad Gateway for url: http://export.arxiv.org/api/query?search_query=%28all%3Allm+OR+all%3Avideo+generation+OR+all%3Aimage+generation+OR+all%3Adiffusion+OR+all%3A3D+OR+all%3Aimage+editing%29+AND+%28cat%3Acs.AI+OR+cat%3Acs.CL+OR+cat%3Acs.CV+OR+cat%3Acs.LG+OR+cat%3Acs.NE+OR+cat%3Acs.RO+OR+cat%3Astat.ML%29+AND+submittedDate%3A%5B20250723%2A+TO+20250725%2A%5D%26sortBy%3DlastUpdatedDate%26sortOrder%3Ddescending%26max_results%3D20
+2025-07-25 12:07:50,018 - INFO - Found 0 papers
+2025-07-25 12:07:50,018 - INFO - No papers found for today
+2025-07-25 12:07:54,547 - INFO - Starting ArXiv paper search and email task...
+2025-07-25 12:07:54,548 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-25 12:07:54,549 - INFO - Searching ArXiv with query: (all:llm OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:image editing) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250723* TO 20250725*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=20
+2025-07-25 12:07:55,694 - INFO - Found 9 papers matching criteria
+2025-07-25 12:07:55,694 - INFO - Found 9 papers
+2025-07-25 12:07:55,694 - INFO - Processing paper 1/9: On the Performance of Concept Probing: The Influen...
+2025-07-25 12:07:55,694 - INFO - PDF already exists: ./downloads\2507.18550.pdf
+2025-07-25 12:07:55,695 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18550.pdf
+2025-07-25 12:07:55,982 - INFO - Resized image from 2382x3368 to 1414x2000
+2025-07-25 12:07:56,085 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18550.png
+2025-07-25 12:07:56,086 - INFO - Final image size: 1414x2000, file size: 0.80MB
+2025-07-25 12:07:56,089 - INFO - Cleaned up PDF file: ./downloads\2507.18550.pdf
+2025-07-25 12:07:56,090 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:08:27,754 - INFO - Starting ArXiv paper search and email task...
+2025-07-25 12:08:27,758 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-25 12:08:27,758 - INFO - Searching ArXiv with query: (all:llm OR all:video generation OR all:image generation OR all:diffusion OR all:3D OR all:image editing) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250723* TO 20250725*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=20
+2025-07-25 12:08:28,590 - INFO - Found 9 papers matching criteria
+2025-07-25 12:08:28,591 - INFO - Found 9 papers
+2025-07-25 12:08:28,591 - INFO - Processing paper 1/9: On the Performance of Concept Probing: The Influen...
+2025-07-25 12:08:28,591 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18550.pdf
+2025-07-25 12:08:30,150 - INFO - PDF downloaded successfully: ./downloads\2507.18550.pdf
+2025-07-25 12:08:30,151 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18550.png
+2025-07-25 12:08:30,152 - INFO - Cleaned up PDF file: ./downloads\2507.18550.pdf
+2025-07-25 12:08:30,152 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:08:31,988 - INFO - Abstract analysis completed successfully
+2025-07-25 12:08:31,988 - INFO - Generating summary image for paper: 2507.18550
+2025-07-25 12:08:32,290 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18550_summary.png
+2025-07-25 12:08:32,302 - INFO - Sending image email for paper: 2507.18550
+2025-07-25 12:08:35,644 - ERROR - Error sending image email for paper 2507.18550: (-1, b'\x00\x00\x00')
+2025-07-25 12:08:35,645 - INFO - Successfully processed and sent paper 1
+2025-07-25 12:08:35,645 - INFO - Processing paper 2/9: PRIX: Learning to Plan from Raw Pixels for End-to-...
+2025-07-25 12:08:35,645 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.17596.pdf
+2025-07-25 12:09:05,168 - INFO - PDF downloaded successfully: ./downloads\2507.17596.pdf
+2025-07-25 12:09:05,168 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.17596.pdf
+2025-07-25 12:09:05,506 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:05,626 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.17596.png
+2025-07-25 12:09:05,626 - INFO - Final image size: 1545x2000, file size: 0.75MB
+2025-07-25 12:09:05,631 - INFO - Cleaned up PDF file: ./downloads\2507.17596.pdf
+2025-07-25 12:09:05,631 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:07,492 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:07,492 - INFO - Generating summary image for paper: 2507.17596
+2025-07-25 12:09:07,812 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.17596_summary.png
+2025-07-25 12:09:07,824 - INFO - Sending image email for paper: 2507.17596
+2025-07-25 12:09:11,111 - ERROR - Error sending image email for paper 2507.17596: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:11,111 - INFO - Successfully processed and sent paper 2
+2025-07-25 12:09:11,112 - INFO - Processing paper 3/9: SynC: Synthetic Image Caption Dataset Refinement w...
+2025-07-25 12:09:11,112 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18616.pdf
+2025-07-25 12:09:12,719 - INFO - PDF downloaded successfully: ./downloads\2507.18616.pdf
+2025-07-25 12:09:12,720 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18616.pdf
+2025-07-25 12:09:13,074 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:13,210 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18616.png
+2025-07-25 12:09:13,211 - INFO - Final image size: 1545x2000, file size: 0.90MB
+2025-07-25 12:09:13,214 - INFO - Cleaned up PDF file: ./downloads\2507.18616.pdf
+2025-07-25 12:09:13,214 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:15,883 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:15,884 - INFO - Generating summary image for paper: 2507.18616
+2025-07-25 12:09:16,213 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18616_summary.png
+2025-07-25 12:09:16,230 - INFO - Sending image email for paper: 2507.18616
+2025-07-25 12:09:19,424 - ERROR - Error sending image email for paper 2507.18616: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:19,424 - INFO - Successfully processed and sent paper 3
+2025-07-25 12:09:19,425 - INFO - Processing paper 4/9: ReSem3D: Refinable 3D Spatial Constraints via Fine...
+2025-07-25 12:09:19,425 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18262.pdf
+2025-07-25 12:09:22,010 - INFO - PDF downloaded successfully: ./downloads\2507.18262.pdf
+2025-07-25 12:09:22,010 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18262.pdf
+2025-07-25 12:09:22,316 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:22,447 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18262.png
+2025-07-25 12:09:22,448 - INFO - Final image size: 1545x2000, file size: 1.05MB
+2025-07-25 12:09:22,454 - INFO - Cleaned up PDF file: ./downloads\2507.18262.pdf
+2025-07-25 12:09:22,454 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:24,736 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:24,737 - INFO - Generating summary image for paper: 2507.18262
+2025-07-25 12:09:25,111 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18262_summary.png
+2025-07-25 12:09:25,127 - INFO - Sending image email for paper: 2507.18262
+2025-07-25 12:09:28,404 - ERROR - Error sending image email for paper 2507.18262: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:28,404 - INFO - Successfully processed and sent paper 4
+2025-07-25 12:09:28,404 - INFO - Processing paper 5/9: On the Interaction of Compressibility and Adversar...
+2025-07-25 12:09:28,405 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.17725.pdf
+2025-07-25 12:09:30,182 - INFO - PDF downloaded successfully: ./downloads\2507.17725.pdf
+2025-07-25 12:09:30,182 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.17725.pdf
+2025-07-25 12:09:30,447 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:30,562 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.17725.png
+2025-07-25 12:09:30,562 - INFO - Final image size: 1545x2000, file size: 0.60MB
+2025-07-25 12:09:30,566 - INFO - Cleaned up PDF file: ./downloads\2507.17725.pdf
+2025-07-25 12:09:30,566 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:32,297 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:32,298 - INFO - Generating summary image for paper: 2507.17725
+2025-07-25 12:09:32,547 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.17725_summary.png
+2025-07-25 12:09:32,562 - INFO - Sending image email for paper: 2507.17725
+2025-07-25 12:09:35,651 - ERROR - Error sending image email for paper 2507.17725: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:35,652 - INFO - Successfully processed and sent paper 5
+2025-07-25 12:09:35,652 - INFO - Processing paper 6/9: GRR-CoCa: Leveraging LLM Mechanisms in Multimodal ...
+2025-07-25 12:09:35,652 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18009.pdf
+2025-07-25 12:09:37,232 - INFO - PDF downloaded successfully: ./downloads\2507.18009.pdf
+2025-07-25 12:09:37,233 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18009.pdf
+2025-07-25 12:09:37,494 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:37,615 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18009.png
+2025-07-25 12:09:37,615 - INFO - Final image size: 1545x2000, file size: 0.59MB
+2025-07-25 12:09:37,618 - INFO - Cleaned up PDF file: ./downloads\2507.18009.pdf
+2025-07-25 12:09:37,618 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:39,490 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:39,491 - INFO - Generating summary image for paper: 2507.18009
+2025-07-25 12:09:39,822 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18009_summary.png
+2025-07-25 12:09:39,833 - INFO - Sending image email for paper: 2507.18009
+2025-07-25 12:09:42,911 - ERROR - Error sending image email for paper 2507.18009: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:42,912 - INFO - Successfully processed and sent paper 6
+2025-07-25 12:09:42,912 - INFO - Processing paper 7/9: Parameter-Efficient Fine-Tuning of 3D DDPM for MRI...
+2025-07-25 12:09:42,912 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18112.pdf
+2025-07-25 12:09:44,910 - INFO - PDF downloaded successfully: ./downloads\2507.18112.pdf
+2025-07-25 12:09:44,911 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18112.pdf
+2025-07-25 12:09:45,174 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:45,291 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18112.png
+2025-07-25 12:09:45,292 - INFO - Final image size: 1545x2000, file size: 0.52MB
+2025-07-25 12:09:45,295 - INFO - Cleaned up PDF file: ./downloads\2507.18112.pdf
+2025-07-25 12:09:45,295 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:47,080 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:47,080 - INFO - Generating summary image for paper: 2507.18112
+2025-07-25 12:09:47,350 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18112_summary.png
+2025-07-25 12:09:47,358 - INFO - Sending image email for paper: 2507.18112
+2025-07-25 12:09:50,401 - ERROR - Error sending image email for paper 2507.18112: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:50,401 - INFO - Successfully processed and sent paper 7
+2025-07-25 12:09:50,401 - INFO - Processing paper 8/9: ViGText: Deepfake Image Detection with Vision-Lang...
+2025-07-25 12:09:50,401 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18031.pdf
+2025-07-25 12:09:52,328 - INFO - PDF downloaded successfully: ./downloads\2507.18031.pdf
+2025-07-25 12:09:52,328 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18031.pdf
+2025-07-25 12:09:52,625 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:09:52,786 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18031.png
+2025-07-25 12:09:52,787 - INFO - Final image size: 1545x2000, file size: 1.01MB
+2025-07-25 12:09:52,794 - INFO - Cleaned up PDF file: ./downloads\2507.18031.pdf
+2025-07-25 12:09:52,796 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:09:54,961 - INFO - Abstract analysis completed successfully
+2025-07-25 12:09:54,961 - INFO - Generating summary image for paper: 2507.18031
+2025-07-25 12:09:55,324 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18031_summary.png
+2025-07-25 12:09:55,339 - INFO - Sending image email for paper: 2507.18031
+2025-07-25 12:09:58,503 - ERROR - Error sending image email for paper 2507.18031: (-1, b'\x00\x00\x00')
+2025-07-25 12:09:58,504 - INFO - Successfully processed and sent paper 8
+2025-07-25 12:09:58,505 - INFO - Processing paper 9/9: GrAInS: Gradient-based Attribution for Inference-T...
+2025-07-25 12:09:58,505 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18043.pdf
+2025-07-25 12:13:12,143 - INFO - Starting ArXiv paper search and email task...
+2025-07-25 12:13:12,146 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-25 12:13:12,146 - INFO - Searching ArXiv with query: (all:wan 2.1 OR all:stable diffusion OR all:3D gaussian OR all:vggt OR all:flux OR all:seedance) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250723* TO 20250725*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=20
+2025-07-25 12:13:13,423 - INFO - Found 7 papers matching criteria
+2025-07-25 12:13:13,423 - INFO - Found 7 papers
+2025-07-25 12:13:13,424 - INFO - Processing paper 1/7: PRIX: Learning to Plan from Raw Pixels for End-to-...
+2025-07-25 12:13:13,424 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.17596.pdf
+2025-07-25 12:13:15,180 - INFO - PDF downloaded successfully: ./downloads\2507.17596.pdf
+2025-07-25 12:13:15,181 - INFO - Screenshot already exists: ./downloads\screenshots\2507.17596.png
+2025-07-25 12:13:15,181 - INFO - Cleaned up PDF file: ./downloads\2507.17596.pdf
+2025-07-25 12:13:15,181 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:13:17,629 - INFO - Abstract analysis completed successfully
+2025-07-25 12:13:17,630 - INFO - Generating summary image for paper: 2507.17596
+2025-07-25 12:13:17,946 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.17596_summary.png
+2025-07-25 12:13:17,958 - INFO - Sending image email for paper: 2507.17596
+2025-07-25 12:13:21,209 - ERROR - Error sending image email for paper 2507.17596: (-1, b'\x00\x00\x00')
+2025-07-25 12:13:21,210 - INFO - Successfully processed and sent paper 1
+2025-07-25 12:13:21,210 - INFO - Processing paper 2/7: ReSem3D: Refinable 3D Spatial Constraints via Fine...
+2025-07-25 12:13:21,211 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18262.pdf
+2025-07-25 12:13:24,654 - INFO - PDF downloaded successfully: ./downloads\2507.18262.pdf
+2025-07-25 12:13:24,655 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18262.png
+2025-07-25 12:13:24,657 - INFO - Cleaned up PDF file: ./downloads\2507.18262.pdf
+2025-07-25 12:13:24,657 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:13:26,661 - INFO - Abstract analysis completed successfully
+2025-07-25 12:13:26,661 - INFO - Generating summary image for paper: 2507.18262
+2025-07-25 12:13:27,024 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18262_summary.png
+2025-07-25 12:13:27,041 - INFO - Sending image email for paper: 2507.18262
+2025-07-25 12:13:30,264 - ERROR - Error sending image email for paper 2507.18262: (-1, b'\x00\x00\x00')
+2025-07-25 12:13:30,265 - INFO - Successfully processed and sent paper 2
+2025-07-25 12:13:30,265 - INFO - Processing paper 3/7: GRR-CoCa: Leveraging LLM Mechanisms in Multimodal ...
+2025-07-25 12:13:30,265 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18009.pdf
+2025-07-25 12:13:32,778 - INFO - PDF downloaded successfully: ./downloads\2507.18009.pdf
+2025-07-25 12:13:32,779 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18009.png
+2025-07-25 12:13:32,779 - INFO - Cleaned up PDF file: ./downloads\2507.18009.pdf
+2025-07-25 12:13:32,779 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:13:34,652 - INFO - Abstract analysis completed successfully
+2025-07-25 12:13:34,652 - INFO - Generating summary image for paper: 2507.18009
+2025-07-25 12:13:34,925 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18009_summary.png
+2025-07-25 12:13:34,935 - INFO - Sending image email for paper: 2507.18009
+2025-07-25 12:13:38,161 - ERROR - Error sending image email for paper 2507.18009: (-1, b'\x00\x00\x00')
+2025-07-25 12:13:38,162 - INFO - Successfully processed and sent paper 3
+2025-07-25 12:13:38,162 - INFO - Processing paper 4/7: Group Sequence Policy Optimization...
+2025-07-25 12:13:38,162 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18071.pdf
+2025-07-25 12:13:39,761 - INFO - PDF downloaded successfully: ./downloads\2507.18071.pdf
+2025-07-25 12:13:39,762 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18071.pdf
+2025-07-25 12:13:40,090 - INFO - Resized image from 2382x3368 to 1414x2000
+2025-07-25 12:13:40,195 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18071.png
+2025-07-25 12:13:40,196 - INFO - Final image size: 1414x2000, file size: 0.73MB
+2025-07-25 12:13:40,199 - INFO - Cleaned up PDF file: ./downloads\2507.18071.pdf
+2025-07-25 12:13:40,200 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:13:42,087 - INFO - Abstract analysis completed successfully
+2025-07-25 12:13:42,088 - INFO - Generating summary image for paper: 2507.18071
+2025-07-25 12:13:42,376 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18071_summary.png
+2025-07-25 12:13:42,387 - INFO - Sending image email for paper: 2507.18071
+2025-07-25 12:13:45,675 - ERROR - Error sending image email for paper 2507.18071: (-1, b'\x00\x00\x00')
+2025-07-25 12:13:45,676 - INFO - Successfully processed and sent paper 4
+2025-07-25 12:13:45,676 - INFO - Processing paper 5/7: ViGText: Deepfake Image Detection with Vision-Lang...
+2025-07-25 12:13:45,676 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18031.pdf
+2025-07-25 12:13:56,862 - INFO - PDF downloaded successfully: ./downloads\2507.18031.pdf
+2025-07-25 12:13:56,863 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18031.png
+2025-07-25 12:13:56,863 - INFO - Cleaned up PDF file: ./downloads\2507.18031.pdf
+2025-07-25 12:13:56,863 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:13:58,825 - INFO - Abstract analysis completed successfully
+2025-07-25 12:13:58,825 - INFO - Generating summary image for paper: 2507.18031
+2025-07-25 12:13:59,185 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18031_summary.png
+2025-07-25 12:13:59,200 - INFO - Sending image email for paper: 2507.18031
+2025-07-25 12:14:02,502 - ERROR - Error sending image email for paper 2507.18031: (-1, b'\x00\x00\x00')
+2025-07-25 12:14:02,503 - INFO - Successfully processed and sent paper 5
+2025-07-25 12:14:02,503 - INFO - Processing paper 6/7: Vision Transformer attention alignment with human ...
+2025-07-25 12:14:02,504 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.17616.pdf
+2025-07-25 12:14:04,966 - INFO - PDF downloaded successfully: ./downloads\2507.17616.pdf
+2025-07-25 12:14:04,967 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.17616.pdf
+2025-07-25 12:14:05,244 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:14:05,365 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.17616.png
+2025-07-25 12:14:05,365 - INFO - Final image size: 1545x2000, file size: 0.62MB
+2025-07-25 12:14:05,372 - INFO - Cleaned up PDF file: ./downloads\2507.17616.pdf
+2025-07-25 12:14:05,373 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:14:07,518 - INFO - Abstract analysis completed successfully
+2025-07-25 12:14:07,518 - INFO - Generating summary image for paper: 2507.17616
+2025-07-25 12:14:07,819 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.17616_summary.png
+2025-07-25 12:14:07,829 - INFO - Sending image email for paper: 2507.17616
+2025-07-25 12:14:11,090 - ERROR - Error sending image email for paper 2507.17616: (-1, b'\x00\x00\x00')
+2025-07-25 12:14:11,091 - INFO - Successfully processed and sent paper 6
+2025-07-25 12:14:11,091 - INFO - Processing paper 7/7: Perspective-Invariant 3D Object Detection...
+2025-07-25 12:14:11,091 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.17665.pdf
+2025-07-25 12:15:08,030 - INFO - PDF downloaded successfully: ./downloads\2507.17665.pdf
+2025-07-25 12:15:08,031 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.17665.pdf
+2025-07-25 12:15:08,479 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-25 12:15:08,609 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.17665.png
+2025-07-25 12:15:08,610 - INFO - Final image size: 1545x2000, file size: 1.82MB
+2025-07-25 12:15:08,617 - INFO - Cleaned up PDF file: ./downloads\2507.17665.pdf
+2025-07-25 12:15:08,617 - INFO - Analyzing abstract with Gemini API...
+2025-07-25 12:15:10,447 - INFO - Abstract analysis completed successfully
+2025-07-25 12:15:10,447 - INFO - Generating summary image for paper: 2507.17665
+2025-07-25 12:15:10,734 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.17665_summary.png
+2025-07-25 12:15:10,749 - INFO - Sending image email for paper: 2507.17665
+2025-07-25 12:15:14,121 - ERROR - Error sending image email for paper 2507.17665: (-1, b'\x00\x00\x00')
+2025-07-25 12:15:14,122 - INFO - Successfully processed and sent paper 7
+2025-07-25 12:15:14,122 - INFO - Task completed successfully
+2025-07-28 00:57:17,834 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 00:57:17,836 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 00:57:17,836 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:19,009 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 00:57:19,010 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:20,159 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 00:57:20,159 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:21,350 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 00:57:21,350 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:22,996 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 00:57:22,996 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:24,077 - INFO - Found 0 papers for keyword 'flux'
+2025-07-28 00:57:24,077 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:25,304 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 00:57:25,304 - INFO - Searching ArXiv with keyword ' video generation', query: (all:video generation) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:26,530 - INFO - Found 0 papers for keyword ' video generation'
+2025-07-28 00:57:26,530 - INFO - Searching ArXiv with keyword ' image generaion', query: (all:image generaion) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:27,684 - INFO - Found 0 papers for keyword ' image generaion'
+2025-07-28 00:57:27,684 - INFO - Searching ArXiv with keyword ' image editing', query: (all:image editing) AND (cat:cs.AI OR cat:cs.CL OR cat:cs.CV OR cat:cs.LG OR cat:cs.NE OR cat:cs.RO OR cat:stat.ML) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:57:28,932 - INFO - Found 0 papers for keyword ' image editing'
+2025-07-28 00:57:28,932 - INFO - Total found 0 unique papers after merging all keywords
+2025-07-28 00:57:28,934 - INFO - Found 0 papers
+2025-07-28 00:57:28,934 - INFO - No papers found for today
+2025-07-28 00:58:03,338 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 00:58:03,340 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 00:58:03,340 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:04,677 - INFO - Found 0 papers for keyword 'wan 2.1'
+2025-07-28 00:58:04,677 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:05,875 - INFO - Found 0 papers for keyword 'stable diffusion'
+2025-07-28 00:58:05,875 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:07,026 - INFO - Found 0 papers for keyword '3D gaussian'
+2025-07-28 00:58:07,026 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:08,243 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 00:58:08,243 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:09,495 - INFO - Found 0 papers for keyword 'flux'
+2025-07-28 00:58:09,495 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:10,681 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 00:58:10,681 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:11,928 - INFO - Found 0 papers for keyword 'video generation'
+2025-07-28 00:58:11,929 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:13,490 - INFO - Found 0 papers for keyword 'image generaion'
+2025-07-28 00:58:13,490 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250726* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:14,745 - INFO - Found 0 papers for keyword 'image editing'
+2025-07-28 00:58:14,745 - INFO - Total found 0 unique papers after merging all keywords
+2025-07-28 00:58:14,745 - INFO - Found 0 papers
+2025-07-28 00:58:14,746 - INFO - No papers found for today
+2025-07-28 00:58:38,340 - INFO - Starting ArXiv paper search and email task...
+2025-07-28 00:58:38,342 - INFO - Successfully loaded font: C:/Windows/Fonts/msyh.ttc
+2025-07-28 00:58:38,342 - INFO - Searching ArXiv with keyword 'wan 2.1', query: (all:wan 2.1) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:39,641 - INFO - Found 6 papers for keyword 'wan 2.1'
+2025-07-28 00:58:39,641 - INFO - Searching ArXiv with keyword 'stable diffusion', query: (all:stable diffusion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:40,949 - INFO - Found 10 papers for keyword 'stable diffusion'
+2025-07-28 00:58:40,949 - INFO - Searching ArXiv with keyword '3D gaussian', query: (all:3D gaussian) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:42,200 - INFO - Found 10 papers for keyword '3D gaussian'
+2025-07-28 00:58:42,200 - INFO - Searching ArXiv with keyword 'vggt', query: (all:vggt) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:43,397 - INFO - Found 0 papers for keyword 'vggt'
+2025-07-28 00:58:43,397 - INFO - Searching ArXiv with keyword 'flux', query: (all:flux) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:44,720 - INFO - Found 9 papers for keyword 'flux'
+2025-07-28 00:58:44,721 - INFO - Searching ArXiv with keyword 'seedance', query: (all:seedance) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:45,979 - INFO - Found 0 papers for keyword 'seedance'
+2025-07-28 00:58:45,979 - INFO - Searching ArXiv with keyword 'video generation', query: (all:video generation) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:47,203 - INFO - Found 8 papers for keyword 'video generation'
+2025-07-28 00:58:47,204 - INFO - Searching ArXiv with keyword 'image generaion', query: (all:image generaion) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:48,564 - INFO - Found 9 papers for keyword 'image generaion'
+2025-07-28 00:58:48,564 - INFO - Searching ArXiv with keyword 'image editing', query: (all:image editing) AND submittedDate:[20250723* TO 20250728*]&sortBy=lastUpdatedDate&sortOrder=descending&max_results=5
+2025-07-28 00:58:49,857 - INFO - Found 6 papers for keyword 'image editing'
+2025-07-28 00:58:49,857 - INFO - Total found 58 unique papers after merging all keywords
+2025-07-28 00:58:49,859 - INFO - Found 5 papers
+2025-07-28 00:58:49,859 - INFO - Processing paper 1/5: Captain Cinema: Towards Short Movie Generation...
+2025-07-28 00:58:49,859 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18634.pdf
+2025-07-28 00:58:54,082 - INFO - PDF downloaded successfully: ./downloads\2507.18634.pdf
+2025-07-28 00:58:54,082 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18634.pdf
+2025-07-28 00:58:54,461 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-28 00:58:54,569 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18634.png
+2025-07-28 00:58:54,569 - INFO - Final image size: 1545x2000, file size: 0.68MB
+2025-07-28 00:58:54,579 - INFO - Cleaned up PDF file: ./downloads\2507.18634.pdf
+2025-07-28 00:58:54,579 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 00:58:56,503 - INFO - Abstract analysis completed successfully
+2025-07-28 00:58:56,504 - INFO - Generating summary image for paper: 2507.18634
+2025-07-28 00:58:56,759 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18634_summary.png
+2025-07-28 00:58:56,770 - INFO - Sending image email for paper: 2507.18634
+2025-07-28 00:59:00,131 - ERROR - Error sending image email for paper 2507.18634: (-1, b'\x00\x00\x00')
+2025-07-28 00:59:00,132 - INFO - Successfully processed and sent paper 1
+2025-07-28 00:59:00,132 - INFO - Processing paper 2/5: SIDA: Synthetic Image Driven Zero-shot Domain Adap...
+2025-07-28 00:59:00,132 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18632.pdf
+2025-07-28 00:59:01,913 - INFO - PDF downloaded successfully: ./downloads\2507.18632.pdf
+2025-07-28 00:59:01,913 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18632.pdf
+2025-07-28 00:59:02,292 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-28 00:59:02,412 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18632.png
+2025-07-28 00:59:02,412 - INFO - Final image size: 1545x2000, file size: 1.09MB
+2025-07-28 00:59:02,415 - INFO - Cleaned up PDF file: ./downloads\2507.18632.pdf
+2025-07-28 00:59:02,416 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 00:59:04,015 - INFO - Abstract analysis completed successfully
+2025-07-28 00:59:04,016 - INFO - Generating summary image for paper: 2507.18632
+2025-07-28 00:59:04,324 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18632_summary.png
+2025-07-28 00:59:04,339 - INFO - Sending image email for paper: 2507.18632
+2025-07-28 00:59:07,499 - ERROR - Error sending image email for paper 2507.18632: (-1, b'\x00\x00\x00')
+2025-07-28 00:59:07,500 - INFO - Successfully processed and sent paper 2
+2025-07-28 00:59:07,500 - INFO - Processing paper 3/5: 3D Software Synthesis Guided by Constraint-Express...
+2025-07-28 00:59:07,501 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18625.pdf
+2025-07-28 00:59:09,406 - INFO - PDF downloaded successfully: ./downloads\2507.18625.pdf
+2025-07-28 00:59:09,406 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18625.pdf
+2025-07-28 00:59:09,698 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-28 00:59:09,811 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18625.png
+2025-07-28 00:59:09,811 - INFO - Final image size: 1545x2000, file size: 0.88MB
+2025-07-28 00:59:09,815 - INFO - Cleaned up PDF file: ./downloads\2507.18625.pdf
+2025-07-28 00:59:09,816 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 00:59:11,456 - INFO - Abstract analysis completed successfully
+2025-07-28 00:59:11,457 - INFO - Generating summary image for paper: 2507.18625
+2025-07-28 00:59:11,773 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18625_summary.png
+2025-07-28 00:59:11,786 - INFO - Sending image email for paper: 2507.18625
+2025-07-28 00:59:15,224 - ERROR - Error sending image email for paper 2507.18625: (-1, b'\x00\x00\x00')
+2025-07-28 00:59:15,224 - INFO - Successfully processed and sent paper 3
+2025-07-28 00:59:15,225 - INFO - Processing paper 4/5: SynC: Synthetic Image Caption Dataset Refinement w...
+2025-07-28 00:59:15,225 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18616.pdf
+2025-07-28 00:59:16,887 - INFO - PDF downloaded successfully: ./downloads\2507.18616.pdf
+2025-07-28 00:59:16,888 - INFO - Screenshot already exists: ./downloads\screenshots\2507.18616.png
+2025-07-28 00:59:16,888 - INFO - Cleaned up PDF file: ./downloads\2507.18616.pdf
+2025-07-28 00:59:16,889 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 00:59:18,592 - INFO - Abstract analysis completed successfully
+2025-07-28 00:59:18,592 - INFO - Generating summary image for paper: 2507.18616
+2025-07-28 00:59:18,920 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18616_summary.png
+2025-07-28 00:59:18,933 - INFO - Sending image email for paper: 2507.18616
+2025-07-28 00:59:22,172 - ERROR - Error sending image email for paper 2507.18616: (-1, b'\x00\x00\x00')
+2025-07-28 00:59:22,172 - INFO - Successfully processed and sent paper 4
+2025-07-28 00:59:22,173 - INFO - Processing paper 5/5: PosterMate: Audience-driven Collaborative Persona ...
+2025-07-28 00:59:22,173 - INFO - Downloading PDF: https://arxiv.org/pdf/2507.18572.pdf
+2025-07-28 00:59:25,385 - INFO - PDF downloaded successfully: ./downloads\2507.18572.pdf
+2025-07-28 00:59:25,385 - INFO - Creating high-quality screenshot from PDF: ./downloads\2507.18572.pdf
+2025-07-28 00:59:25,816 - INFO - Resized image from 2448x3168 to 1545x2000
+2025-07-28 00:59:25,932 - INFO - High-quality screenshot created: ./downloads\screenshots\2507.18572.png
+2025-07-28 00:59:25,932 - INFO - Final image size: 1545x2000, file size: 1.29MB
+2025-07-28 00:59:25,937 - INFO - Cleaned up PDF file: ./downloads\2507.18572.pdf
+2025-07-28 00:59:25,937 - INFO - Analyzing abstract with Gemini API...
+2025-07-28 00:59:27,744 - INFO - Abstract analysis completed successfully
+2025-07-28 00:59:27,745 - INFO - Generating summary image for paper: 2507.18572
+2025-07-28 00:59:28,066 - INFO - Generated two-column layout paper summary image: ./downloads\generated_images\2507.18572_summary.png
+2025-07-28 00:59:28,080 - INFO - Sending image email for paper: 2507.18572
+2025-07-28 00:59:31,282 - ERROR - Error sending image email for paper 2507.18572: (-1, b'\x00\x00\x00')
+2025-07-28 00:59:31,284 - INFO - Successfully processed and sent paper 5
+2025-07-28 00:59:31,284 - INFO - Task completed successfully

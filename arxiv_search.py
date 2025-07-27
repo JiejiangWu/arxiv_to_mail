@@ -34,45 +34,38 @@ class ArxivSearcher:
             "stat.ML"  # Statistics - Machine Learning
         ]
     
-    def build_query(self, keywords, max_results=50, days_back=10):
+    def build_query(self, keyword, max_results=50, days_back=10):
         """
-        构建ArXiv搜索查询
+        构建ArXiv搜索查询 (单个关键词)
         
         Args:
-            keywords: 关键词列表
+            keyword: 单个关键词
             days_back: 搜索最近几天的论文
         
         Returns:
             构建的查询字符串
         """
         # 构建关键词查询 (在标题、摘要中搜索)
-        keyword_queries = []
-        for keyword in keywords:
-            keyword = keyword.strip()
-            # keyword_queries.append(f"(ti:{keyword} OR abs:{keyword})")
-            keyword_queries.append(f"all:{keyword}")
-
-        keywords_part = " OR ".join(keyword_queries)
+        keyword = keyword.strip()
+        keyword_query = f"all:{keyword}"
         
         # 构建分类查询 (计算机科学相关分类)
         category_queries = [f"cat:{cat}" for cat in self.cs_categories]
         categories_part = " OR ".join(category_queries)
-        # query = f"({keywords_part}) AND ({categories_part})"
-
         
         # 时间限制
         start_date, end_date = get_date_range_for_arxiv(days_back)
         time_query = f"submittedDate:[{start_date}* TO {end_date}*]"
 
         # 组合查询
-        # query = f"({keywords_part}) AND ({categories_part}) AND {time_query}&sortBy=submittedDate&sortOrder=descending&max_results={max_results}"
-        query = f"({keywords_part}) AND ({categories_part}) AND {time_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
-        
+        # query = f"({keyword_query}) AND ({categories_part}) AND {time_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
+        query = f"({keyword_query}) AND {time_query}&sortBy=lastUpdatedDate&sortOrder=descending&max_results={max_results}"
+
         return query
     
     def search_papers(self, keywords, max_results=10, days_back=1):
         """
-        搜索ArXiv论文
+        搜索ArXiv论文 - 逐个关键词查询并合并结果
         
         Args:
             keywords: 关键词列表
@@ -80,51 +73,61 @@ class ArxivSearcher:
             days_back: 搜索最近几天的论文
           
         Returns:
-            论文列表
+            论文列表（已去重）
         """
-        try:
-            query = self.build_query(keywords, max_results, days_back)
-            
-            # 按照提交日期排序，获取最新的论文
-            params = {
-                'search_query': query,
-            }
-            
-            logger.info(f"Searching ArXiv with query: {query}")
+        all_papers = []
+        seen_arxiv_ids = set()
+        cutoff_date = datetime.now() - timedelta(days=days_back)
+        
+        # 逐个关键词查询
+        for keyword in keywords:
+            try:
+                query = self.build_query(keyword, max_results, days_back)
+                
+                # 按照提交日期排序，获取最新的论文
+                params = {
+                    'search_query': query,
+                }
+                
+                logger.info(f"Searching ArXiv with keyword '{keyword}', query: {query}")
 
-            response = requests.get(self.base_url, params=params, timeout=30)
-            # response = requests.get(self.base_url+'/'+query,timeout=30)
-            response.raise_for_status()
-            
-            # 解析RSS feed
-            feed = feedparser.parse(response.content)
-            
-            papers = []
-            cutoff_date = datetime.now() - timedelta(days=days_back)
-            
-            for entry in feed.entries:
-                try:
-                    # 提取论文信息
-                    paper_info = self.extract_paper_info(entry)
-                    
-                    # 检查日期过滤
-                    if paper_info['published_date'] >= cutoff_date:
-                        papers.append(paper_info)
+                response = requests.get(self.base_url, params=params, timeout=30)
+                response.raise_for_status()
+                
+                # 解析RSS feed
+                feed = feedparser.parse(response.content)
+                
+                keyword_papers = []
+                for entry in feed.entries:
+                    try:
+                        # 提取论文信息
+                        paper_info = self.extract_paper_info(entry)
                         
-                        # 达到所需数量就停止
-                        if len(papers) >= max_results:
-                            break
-                    
-                except Exception as e:
-                    logger.warning(f"Error extracting paper info: {str(e)}")
-                    continue
-            
-            logger.info(f"Found {len(papers)} papers matching criteria")
-            return papers[:max_results]
-            
-        except Exception as e:
-            logger.error(f"Error searching ArXiv: {str(e)}")
-            return []
+                        # 检查是否已经存在（去重）
+                        if paper_info['arxiv_id'] in seen_arxiv_ids:
+                            continue
+                            
+                        # 检查日期过滤
+                        if paper_info['published_date'] >= cutoff_date:
+                            keyword_papers.append(paper_info)
+                            seen_arxiv_ids.add(paper_info['arxiv_id'])
+                        
+                    except Exception as e:
+                        logger.warning(f"Error extracting paper info: {str(e)}")
+                        continue
+                
+                logger.info(f"Found {len(keyword_papers)} papers for keyword '{keyword}'")
+                all_papers.extend(keyword_papers)
+                
+            except Exception as e:
+                logger.error(f"Error searching ArXiv with keyword '{keyword}': {str(e)}")
+                continue
+        
+        # 按发布时间降序排序
+        all_papers.sort(key=lambda x: x['published_date'], reverse=True)
+        
+        logger.info(f"Total found {len(all_papers)} unique papers after merging all keywords")
+        return all_papers[:max_results]
     
     def extract_paper_info(self, entry):
         """
