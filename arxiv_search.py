@@ -58,7 +58,7 @@ class ArxivSearcher:
         time_query = f"submittedDate:[{start_date}* TO {end_date}*]"
 
         # 组合查询 (不包含max_results，这个会单独作为参数)
-        query = f"({keyword_query}) AND {time_query}"
+        query = f"({keyword_query}) AND {time_query} AND {categories_part}"
 
         return query
     
