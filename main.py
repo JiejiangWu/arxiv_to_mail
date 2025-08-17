@@ -15,6 +15,7 @@ from arxiv_search import ArxivSearcher
 from pdf_processor import PDFProcessor
 from gemini_analyzer import GeminiAnalyzer
 from email_sender import EmailSender
+from wechat_sender import WeChatSender
 
 # Configure logging
 logging.basicConfig(
@@ -38,6 +39,7 @@ def main_task():
         pdf_processor = PDFProcessor()
         gemini_analyzer = GeminiAnalyzer()
         email_sender = EmailSender()
+        wechat_sender = WeChatSender()
         
         # Search for papers
         papers = arxiv_searcher.search_papers(Config.KEYWORDS, Config.MAX_PAPERS, Config.MAX_BACK_DAY)
@@ -59,12 +61,43 @@ def main_task():
                 analysis = gemini_analyzer.analyze_abstract(paper['abstract'])
                 
                 # Send email (choose format based on config)
+                email_success = False
                 if Config.SEND_AS_IMAGE:
-                    email_sender.send_paper_image_email(paper, analysis, screenshot_path)
+                    email_success = email_sender.send_paper_image_email(paper, analysis, screenshot_path)
                 else:
-                    email_sender.send_paper_email(paper, analysis, screenshot_path)
+                    email_success = email_sender.send_paper_email(paper, analysis, screenshot_path)
                 
-                logger.info(f"Successfully processed and sent paper {i}")
+                # Send to WeChat if enabled
+                wechat_success = False
+                if Config.WECHAT_ENABLED:
+                    # For WeChat, we always use the image format
+                    # Generate image if not already generated for email
+                    if not Config.SEND_AS_IMAGE:
+                        from image_generator import ImageGenerator
+                        image_gen = ImageGenerator()
+                        image_path = image_gen.generate_paper_image(paper, analysis, screenshot_path)
+                        if not image_path:
+                            image_path = image_gen.generate_simple_text_image(paper, analysis)
+                    else:
+                        # Use the same image generated for email
+                        from image_generator import ImageGenerator
+                        image_gen = ImageGenerator()
+                        image_path = image_gen.generate_paper_image(paper, analysis, screenshot_path)
+                    
+                    if image_path:
+                        wechat_success = wechat_sender.send_paper_image(paper, image_path)
+                    else:
+                        logger.warning("Failed to generate image for WeChat sending")
+                
+                # Log results
+                if email_success and (not Config.WECHAT_ENABLED or wechat_success):
+                    logger.info(f"Successfully processed and sent paper {i}")
+                elif email_success:
+                    logger.warning(f"Paper {i} sent via email but failed via WeChat")
+                elif wechat_success:
+                    logger.warning(f"Paper {i} sent via WeChat but failed via email")
+                else:
+                    logger.error(f"Paper {i} failed to send via both email and WeChat")
                 
             except Exception as e:
                 logger.error(f"Error processing paper {i}: {str(e)}")

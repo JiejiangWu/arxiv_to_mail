@@ -5,3 +5,4 @@ pillow  # for image processing
 google-generativeai  # for Gemini API
 schedule  # for task scheduling
 python-dotenv  # for environment variables
+wxauto  # for WeChat automation

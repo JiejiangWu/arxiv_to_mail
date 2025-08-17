@@ -27,6 +27,25 @@ def check_dependencies():
         print("请运行: pip install -r requirements.txt")
         return False
 
+def test_wechat():
+    """测试微信发送功能"""
+    print("🔧 测试微信发送功能...")
+    try:
+        result = subprocess.run([sys.executable, 'test_wechat.py'], 
+                              capture_output=True, text=True, encoding='utf-8')
+        
+        print(result.stdout)
+        
+        if result.stderr:
+            print("⚠️  错误信息:")
+            print(result.stderr)
+        
+        if result.returncode != 0:
+            print(f"❌ 测试失败 (返回码: {result.returncode})")
+            
+    except Exception as e:
+        print(f"❌ 测试出错: {str(e)}")
+
 def check_config():
     """检查配置文件"""
     if not os.path.exists('.env'):
@@ -178,11 +197,12 @@ def main():
   python run.py test           # 测试运行一次
   python run.py start          # 启动定时任务
   python run.py status         # 查看状态
+  python run.py test-wechat    # 测试微信发送功能
         """
     )
     
     parser.add_argument('command', 
-                       choices=['setup', 'test', 'start', 'status', 'install'],
+                       choices=['setup', 'test', 'start', 'status', 'install', 'test-wechat'],
                        help='要执行的命令')
     
     if len(sys.argv) == 1:
@@ -203,6 +223,9 @@ def main():
         show_status()
     elif args.command == 'install':
         install_deps()
+    elif args.command == 'test-wechat':
+        if check_dependencies():
+            test_wechat()
 
 if __name__ == "__main__":
     main()

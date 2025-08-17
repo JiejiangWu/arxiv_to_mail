@@ -19,6 +19,10 @@ class Config:
     SENDER_PASSWORD = os.getenv('SENDER_PASSWORD')  # Use app password for Gmail
     RECIPIENT_EMAIL = os.getenv('RECIPIENT_EMAIL')
     
+    # WeChat configuration
+    WECHAT_ENABLED = os.getenv('WECHAT_ENABLED', 'false').lower() == 'true'
+    WECHAT_RECIPIENT = os.getenv('WECHAT_RECIPIENT')  # WeChat username to send to
+    
     # Other settings
     PDF_DOWNLOAD_DIR = os.getenv('PDF_DOWNLOAD_DIR', './downloads')
     SCHEDULE_TIME = os.getenv('SCHEDULE_TIME', '09:00')  # Daily run time
@@ -33,6 +37,10 @@ class Config:
             ('SENDER_PASSWORD', cls.SENDER_PASSWORD),
             ('RECIPIENT_EMAIL', cls.RECIPIENT_EMAIL)
         ]
+        
+        # Check WeChat configuration if enabled
+        if cls.WECHAT_ENABLED:
+            required_vars.append(('WECHAT_RECIPIENT', cls.WECHAT_RECIPIENT))
         
         missing_vars = [var_name for var_name, var_value in required_vars if not var_value]
         
