@@ -9,6 +9,9 @@ class Config:
     KEYWORDS = os.getenv('ARXIV_KEYWORDS', 'machine learning,artificial intelligence').split(',')
     MAX_PAPERS = int(os.getenv('MAX_PAPERS', '5'))
     MAX_BACK_DAY = int(os.getenv('MAX_BACK_DAY', '3'))
+    ARXIV_SOURCE = os.getenv('ARXIV_SOURCE', 'api').strip().lower()
+    if ARXIV_SOURCE not in ('api', 'rss'):
+        ARXIV_SOURCE = 'api'
     # Gemini API configuration
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
     

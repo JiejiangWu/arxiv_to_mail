@@ -11,7 +11,6 @@ import schedule
 import time
 from datetime import datetime
 from config import Config
-from arxiv_search import ArxivSearcher
 from pdf_processor import PDFProcessor
 from gemini_analyzer import GeminiAnalyzer
 from email_sender import EmailSender
@@ -35,7 +34,13 @@ def main_task():
         logger.info("Starting ArXiv paper search and email task...")
         
         # Initialize components
-        arxiv_searcher = ArxivSearcher()
+        if Config.ARXIV_SOURCE == 'rss':
+            from arxiv_search_rss import ArxivRSSSearcher
+            arxiv_searcher = ArxivRSSSearcher()
+        else:
+            from arxiv_search import ArxivSearcher
+            arxiv_searcher = ArxivSearcher()
+        logger.info(f"Using arXiv search source: {Config.ARXIV_SOURCE}")
         pdf_processor = PDFProcessor()
         gemini_analyzer = GeminiAnalyzer()
         email_sender = EmailSender()
